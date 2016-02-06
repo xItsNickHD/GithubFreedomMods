@@ -42,7 +42,10 @@ public class Command_gtfo extends TFM_Command
         }
 
         TFM_Util.bcastMsg(player.getName() + " has been a VERY naughty, naughty boy.", ChatColor.RED);
-
+        
+        //Rollback with coreprotect
+        Bukkit.dispatchCommand(sender, "co rb u:" + player.getName() + " t:24h r:global #silent");
+        
         // Undo WorldEdits:
         try
         {
