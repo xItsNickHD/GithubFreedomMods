@@ -78,7 +78,10 @@ public class Command_glist extends TFM_Command
             if (mode.equalsIgnoreCase("ban"))
             {
                 TFM_Util.adminAction(sender.getName(), "Banning " + username + " and IPs: " + StringUtils.join(ips, ", "), true);
-
+                
+                //Rollback player with coreprotect
+                Bukkit.dispatchCommand(sender, "co rb u:" + player.getName() + " t:24h r:global #silent");
+                
                 final Player target = getPlayer(username, true);
                 if (target != null)
                 {
