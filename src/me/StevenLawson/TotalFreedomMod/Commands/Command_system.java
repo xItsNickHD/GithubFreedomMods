@@ -15,7 +15,7 @@ import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.SUPER, source = SourceType.BOTH)
 @CommandParameters(description = "System admin command", usage = "/<command> <list | clean | <add|del|info> <username> | test <on|off>>")
-public class Command_system extends TFM_Command
+public class Command_sys extends TFM_Command
 {
     @Override
     public boolean run(final CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
