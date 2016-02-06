@@ -866,8 +866,33 @@ public class TFM_PlayerListener implements Listener
         {
             if (TFM_ConfigEntry.SERVER_OWNERS.getList().contains(name))
             {
+                name = ChatColor.DARK_RED + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&4Owner&7]");
+            }
+            else if (TFM_ConfigEntry.SERVER_COOWNERS.getList().contains(name))
+            {
                 name = ChatColor.BLUE + name;
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&9Owner&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&9Co Owner&7]");
+            }
+            else if (TFM_ConfigEntry.SERVER_LDEVS.getList().contains(name))
+            {
+                name = ChatColor.DARK_PURPLE + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&5Lead Developer&7]");
+            }
+            else if (TFM_ConfigEntry.SERVER_SFDEVS.getList().contains(name))
+            {
+                name = ChatColor.DARK_PURPLE + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&5SF Dev&7]");
+            }
+            else if (TFM_ConfigEntry.SERVER_SYSADMINS.getList().contains(name))
+            {
+                name = ChatColor.RED + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&cSys&7]");
+            }
+            else if (TFM_ConfigEntry.SERVER_EXECS.getList().contains(name))
+            {
+                name = ChatColor.GOLD + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&7[&6Exec&7]");
             }
             else if (TFM_AdminList.isSeniorAdmin(player))
             {
