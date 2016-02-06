@@ -48,9 +48,9 @@ public class TotalFreedomMod extends JavaPlugin
     @Deprecated
     public static final String YOU_ARE_NOT_OP = me.StevenLawson.TotalFreedomMod.Commands.TFM_Command.YOU_ARE_NOT_OP;
     //
-    public static String buildNumber = "1";
+    public static String buildNumber = "2";
     public static String buildDate = TotalFreedomMod.buildDate = TFM_Util.dateToString(new Date());
-    public static String buildCreator = "Unknown";
+    public static String buildCreator = "_Pinchyy";
     //
     public static Server server;
     public static TotalFreedomMod plugin;
@@ -77,7 +77,7 @@ public class TotalFreedomMod extends JavaPlugin
     @Override
     public void onEnable()
     {
-        TFM_Log.info("Made by Madgeek1450 and Prozza");
+        TFM_Log.info("Made by _Pinchyy");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
 
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
