@@ -8,14 +8,20 @@ import org.bukkit.entity.Player;
 
 public enum TFM_PlayerRank
 {
-    DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[TF Dev]"),
+    SFDEV("a " + ChatColor.DARK_PURPLE + "SprucyFreedom Developer", ChatColor.DARK_PURPLE + "[SF Dev]"),
+    ADMINMANAGER("the " + ChatColor.GREEN + "Admin Manager", ChatColor.GREEN + "[Admin Manager]"),
+    SYSADMIN("a " + ChatColor.RED + "System Admin", ChatColor.RED + "[Sys]"),
+    EXEC("an" + ChatColor.GOLD + "Executive", ChatColor.GOLD + "[Exec]"),
+    LDEV("the " + ChatColor.DARK_PURPLE + "Lead Developer of SprucyFreedom", ChatColor.DARK_PURPLE + "[SF L-Dev]")
     IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
     OP("an " + ChatColor.RED + "OP", ChatColor.RED + "[OP]"),
     SUPER("a " + ChatColor.GOLD + "Super Admin", ChatColor.GOLD + "[SA]"),
     TELNET("a " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"),
     SENIOR("a " + ChatColor.LIGHT_PURPLE + "Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"),
-    OWNER("the " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
+    OWNER("the " + ChatColor.DARK_RED + "Owner", ChatColor.DARK_RED + "[Owner]"),
+    COOWNER("a " + ChatColor.BLUE + "Co Owner", ChatColor.BLUE + "[Co Owner]")
     CONSOLE("The " + ChatColor.DARK_PURPLE + "Console", ChatColor.DARK_PURPLE + "[Console]");
     private final String loginMessage;
     private final String prefix;
