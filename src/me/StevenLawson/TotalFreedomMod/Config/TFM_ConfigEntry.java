@@ -33,6 +33,11 @@ public enum TFM_ConfigEntry
     SERVER_ADDRESS(String.class, "server.address"),
     SERVER_MOTD(String.class, "server.motd"),
     SERVER_OWNERS(List.class, "server.owners"),
+    SERVER_COOWNERS(List.class, "server.coowners"),
+    SERVER_LEADDEVS(List.class, "server.leaddevs"),
+    SERVER_SFDEVS(List.class, "server.sfdevs"),
+    SERVER_SYSTEMADMINS(List.class, "server.systemadmins"),
+    SERVER_EXEC(List.class, "server.execs"),
     SERVER_BAN_URL(String.class, "server.ban_url"),
     SERVER_PERMBAN_URL(String.class, "server.permban_url"),
     //
