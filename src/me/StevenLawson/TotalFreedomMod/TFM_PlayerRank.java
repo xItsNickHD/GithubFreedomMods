@@ -95,7 +95,7 @@ public enum TFM_PlayerRank
             }
             else if (TFM_ConfigEntry.SERVER_SFDEVS.getList().contains(sender.getName()))
             {
-                return SFDEVS;
+                return SFDEV;
             }
             else if (TFM_ConfigEntry.SERVER_SYSADMINS.getList().contains(sender.getName()))
             {
