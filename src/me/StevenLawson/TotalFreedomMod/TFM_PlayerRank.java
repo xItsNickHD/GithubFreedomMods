@@ -86,6 +86,26 @@ public enum TFM_PlayerRank
             {
                 return OWNER;
             }
+            else if (TFM_ConfigEntry.SERVER_COOWNERS.getList().contains(sender.getName()))
+            {
+                return COOWNER;
+            }
+            else if (TFM_ConfigEntry.SERVER_LDEVS.getList().contains(sender.getName()))
+            {
+                return LDEV;
+            }
+            else if (TFM_ConfigEntry.SERVER_SFDEVS.getList().contains(sender.getName()))
+            {
+                return SFDEVS;
+            }
+            else if (TFM_ConfigEntry.SERVER_SYSADMINS.getList().contains(sender.getName()))
+            {
+                return SYSADMIN;
+            }
+            else if (TFM_ConfigEntry.SERVER_EXECS.getList().contains(sender.getName()))
+            {
+                return EXEC;
+            }
 
             if (entry.isSeniorAdmin())
             {
