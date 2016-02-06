@@ -10,7 +10,6 @@ public enum TFM_PlayerRank
 {
     DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[TF Dev]"),
     SFDEV("a " + ChatColor.DARK_PURPLE + "SprucyFreedom Developer", ChatColor.DARK_PURPLE + "[SF Dev]"),
-    ADMINMANAGER("the " + ChatColor.GREEN + "Admin Manager", ChatColor.GREEN + "[Admin Manager]"),
     SYSADMIN("a " + ChatColor.RED + "System Admin", ChatColor.RED + "[Sys]"),
     EXEC("an" + ChatColor.GOLD + "Executive", ChatColor.GOLD + "[Exec]"),
     LDEV("the " + ChatColor.DARK_PURPLE + "Lead Developer of SprucyFreedom", ChatColor.DARK_PURPLE + "[SF L-Dev]"),
