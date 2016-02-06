@@ -8,6 +8,7 @@ import me.StevenLawson.TotalFreedomMod.TFM_CommandBlocker;
 import me.StevenLawson.TotalFreedomMod.TFM_Log;
 import me.StevenLawson.TotalFreedomMod.TFM_PermbanList;
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerList;
+import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import me.StevenLawson.TotalFreedomMod.TotalFreedomMod;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -44,7 +45,7 @@ public class Command_sfm extends TFM_Command
             TFM_BanManager.load();
             TFM_CommandBlocker.load();
 
-            final String message = String.format("%s v%s.%s reloaded.",
+            final String message = String.format("SprucyFreedomMod 1.0 reloaded.",
                     TotalFreedomMod.pluginName,
                     TotalFreedomMod.pluginVersion,
                     TotalFreedomMod.buildNumber);
@@ -54,18 +55,10 @@ public class Command_sfm extends TFM_Command
             return true;
         }
 
-        playerMsg("SprucyFreedomMod for 'Sprucy Freedom', an all-op server.", ChatColor.GOLD);
-        playerMsg(String.format("Version "
-                + ChatColor.BLUE + "%s.%s" + ChatColor.GOLD + ", built "
-                + ChatColor.BLUE + "%s" + ChatColor.GOLD + " by "
-                + ChatColor.BLUE + "%s" + ChatColor.GOLD + ".",
-                TotalFreedomMod.pluginVersion,
-                TotalFreedomMod.buildNumber,
-                TotalFreedomMod.buildDate,
-                TotalFreedomMod.buildCreator), ChatColor.GOLD);
-        playerMsg("Running on " + TFM_ConfigEntry.SERVER_NAME.getString() + ".", ChatColor.GOLD);
-        playerMsg("Created by Madgeek1450 and Prozza for TotalFreedom, then edited by SprucyFreedom's Devs for SprucyFreedom.", ChatColor.GOLD);
-        playerMsg("Visit " + ChatColor.AQUA + "http://sprucyfreedom.boards.net/" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
+        TFM_Util.playerMsg(sender_p, "SprucyFreedomMod:", ChatColor.RED);
+        TFM_Util.playerMsg(sender_p, "Made in the image of the TotalFreedomMod,but now edited!", ChatColor.RED);
+        TFM_Util.playerMsg(sender_p, "Edited by: TaahThePhoenix , XGreenPlayz12 , _Pinchyy", ChatColor.RED);
+        TFM_Util.playerMsg(sender_p, "This plugin is version 2.0", ChatColor.AQUA);
 
         return true;
     }
