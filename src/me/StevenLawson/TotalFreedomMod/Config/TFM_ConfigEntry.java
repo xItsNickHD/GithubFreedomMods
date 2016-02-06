@@ -34,7 +34,7 @@ public enum TFM_ConfigEntry
     SERVER_MOTD(String.class, "server.motd"),
     SERVER_OWNERS(List.class, "server.owners"),
     SERVER_COOWNERS(List.class, "server.coowners"),
-    SERVER_LEADDEVS(List.class, "server.leaddevs"),
+    SERVER_LDEVS(List.class, "server.ldevs"),
     SERVER_SFDEVS(List.class, "server.sfdevs"),
     SERVER_SYSTEMADMINS(List.class, "server.systemadmins"),
     SERVER_EXEC(List.class, "server.execs"),
